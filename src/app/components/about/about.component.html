@@ -1,53 +1,117 @@
 <div class="container text-center">
-  <h1>About Me</h1>
+  <h1 class="display-4">About Me</h1>
 
-  <img class="border border-dark-2" src="imgs/photographer.jpg" alt="me" />
+  <img
+    class="rounded-circle border border-dark-2 mb-4"
+    src="imgs/photographer.jpg"
+    alt="John Doe"
+    width="250"
+    height="250"
+  />
 
-  <p class="paragraph pt-3">
-    Hello! I'm <strong>Johm Doe</strong>, a passionate and dedicated
-    photographer based in <strong>Vienna</strong>. With over
-    <strong>20</strong> years of experience in the field, I specialize in
-    capturing the essence of moments through my lens.
-  </p>
-  <p>
-    My journey in photography began when I was
-    <strong>20</strong>, and since then, I've been driven by the desire to tell
-    stories through compelling visuals. Whether it's a wedding, a portrait
-    session, or a commercial project, I strive to create images that are not
-    only aesthetically pleasing but also emotionally resonant.
-  </p>
-  <p>
-    I believe that every photograph is a unique piece of art, and I take pride
-    in delivering high-quality work that exceeds my clients' expectations. My
-    style is a blend of classic and contemporary, with a focus on natural light
-    and authentic emotions.
-  </p>
+  <div class="about-section">
+    <p class="lead">
+      Hello! I'm <strong>John Doe</strong>, a passionate and dedicated
+      photographer based in <strong>Vienna</strong>. With over
+      <strong>20</strong> years of experience in the field, I specialize in
+      capturing the essence of moments through my lens.
+    </p>
+    <p>
+      My journey in photography began when I was <strong>20</strong>, and since
+      then, I've been driven by the desire to tell stories through compelling
+      visuals. Whether it's a wedding, a portrait session, or a commercial
+      project, I strive to create images that are not only aesthetically
+      pleasing but also emotionally resonant.
+    </p>
+    <p>
+      I believe that every photograph is a unique piece of art, and I take pride
+      in delivering high-quality work that exceeds my clients' expectations. My
+      style is a blend of classic and contemporary, with a focus on natural
+      light and authentic emotions.
+    </p>
+  </div>
 
-  <!-- New paragraph for collaborators -->
-  <h2>Collaborators</h2>
-  <img src="imgs/team.jpg" alt="team" />
-  <p class="paragraph p-3">
-    I work with a team of highly qualified professionals who share my passion
-    for photography. Each team member brings unique experience and contributes
-    to creating exceptional results.
-  </p>
+  <!-- Collaborators Section -->
+  <div class="collaborators-section mt-5">
+    <h2 class="display-5">Collaborators</h2>
+    <img class="img-fluid mb-3" src="imgs/team.jpg" alt="Team" />
+    <p class="lead">
+      I work with a team of highly qualified professionals who share my passion
+      for photography. Each team member brings unique experience and contributes
+      to creating exceptional results.
+    </p>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <img
+          class="img-fluid mb-3 rounded-circle border border-dark-2"
+          src="imgs/Jane Smith.avif"
+          alt="Drone Expert"
+          width="300"
+          height="300"
+        />
+        <h3>Jane Smith</h3>
+        <p>
+          Jane is our drone expert with over 10 years of experience in aerial
+          photography and videography. Her skills ensure that we capture
+          breathtaking views from above.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img
+          class="img-fluid mb-3 rounded-circle border border-dark-2"
+          src="imgs/Michael Johnson.avif"
+          alt="Video Maker"
+          width="300"
+          height="300"
+        />
+        <h3>Michael Johnson</h3>
+        <p>
+          Michael is our video maker. With his creative vision, he transforms
+          raw footage into compelling stories that engage and inspire.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img
+          class="img-fluid mb-3 rounded-circle border border-dark-2"
+          src="imgs/Emily Davis.avif"
+          alt="Editor"
+          width="300"
+          height="300"
+        />
+        <h3>Emily Davis</h3>
+        <p>
+          Emily is our editor. She ensures that every photo and video is
+          polished to perfection, enhancing the natural beauty of each shot.
+        </p>
+      </div>
+    </div>
+  </div>
 
-  <!-- New paragraph for tools used -->
-  <h2>Tools Used</h2>
-  <img src="imgs/cameras.jpg" alt="tools" />
-  <img src="imgs/camera2.0.jpg" alt="cameras" />
-  <p class="paragraph p-3">
-    We use state-of-the-art equipment to ensure the highest quality images. Our
-    main tools include professional cameras, high-quality lenses, studio lights,
-    and advanced editing software.
-  </p>
+  <!-- Tools Used Section -->
+  <div class="tools-section mt-5">
+    <h2 class="display-5">Tools Used</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-fluid mb-3" src="imgs/cameras.jpg" alt="Cameras" />
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid mb-3" src="imgs/camera2.0.jpg" alt="Cameras" />
+      </div>
+    </div>
+    <p class="lead">
+      We use state-of-the-art equipment to ensure the highest quality images.
+      Our main tools include professional cameras, high-quality lenses, studio
+      lights, and advanced editing software.
+    </p>
+  </div>
 
-  <p>
-    If you're interested in working with me or have any questions, feel free to
-    reach out through the contact form. I look forward to capturing your special
-    moments!
-  </p>
-
-  <!-- Button to navigate to Contact Form -->
-  <button class="btn btn-dark mt-4" routerlink="/contact">Contact Me</button>
+  <!-- Contact Section -->
+  <div class="contact-section mt-5">
+    <p class="lead">
+      If you're interested in working with me or have any questions, feel free
+      to reach out through the contact form. I look forward to capturing your
+      special moments!
+    </p>
+    <button class="btn btn-dark mt-4" routerLink="/contact">Contact Me</button>
+  </div>
 </div>
