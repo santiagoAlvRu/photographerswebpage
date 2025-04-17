@@ -1,4 +1,4 @@
-import { Iphotos } from "./iphotos";
+import { Iawards, Iphotos } from "./iphotos";
 
 export let photos: Iphotos[] = [
     {
@@ -56,4 +56,12 @@ export let photos: Iphotos[] = [
         description: 'Hands-on, creative, and full of energy—capturing the spirit of learning and growth in every shot.',
         image: 'workshop.jpeg'
     }
+];
+
+export let awards: Iawards[] = [
+    {name: 'Best Travel Photo 2020', logo: 'best-travel-photo.jpeg'},
+    {name: 'Journalist Photographer of the Year', logo: 'journalist-photographer.jpeg'},
+    {name: 'Golden Lens 2019', logo: 'golden-lens.jpeg'},
+    {name: 'International Photo Contest Winner', logo: 'international-photocontest.jpeg'},
+    {name: 'People`s Choice 2021', logo: 'peoples-choice.jpeg'}
 ]

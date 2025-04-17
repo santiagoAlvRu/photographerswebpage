@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Iphotos } from '../../iphotos';
-import { photos } from '../../photos';
+import { Iawards, Iphotos } from '../../iphotos';
+import { awards, photos } from '../../photos';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -11,4 +11,5 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 photos: Iphotos[] = photos;
+awards: Iawards[] = awards;
 }
