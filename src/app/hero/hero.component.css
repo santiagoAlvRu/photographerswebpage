@@ -1,0 +1,13 @@
+.lead-image{
+  height: 500px;
+  overflow: hidden;
+}
+.lead-text-effect {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.lead-text-effect:hover {
+  color: #f3d9a4;
+  transform: scale(1.05);
+}
