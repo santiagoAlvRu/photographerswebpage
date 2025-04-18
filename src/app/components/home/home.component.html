@@ -29,10 +29,10 @@
 </div>
 </div>
 
-<div class="awards-section bg-cover bg-center py-12 text-white img-fluid" style="background-image: url('/imgs/space-background.jpeg')">
+<div class="awards-section bg-cover bg-center py-12 text-white img-fluid">
   <h2 class="text-center display-4 font-bold mb-5">Awards & Recognition</h2>
   @for (award of awards; track $index) {
-  <div class="text-center gap-6 px-4">
+  <div class="text-center gap-6 px-4 p-2">
     <div class="flex flex-col items-center w-32 my-2">
       <img src="/imgs/{{ award.logo }}" class="img-fluid"/>
       <span class="text-sm text-center"> {{ award.name }}</span>
