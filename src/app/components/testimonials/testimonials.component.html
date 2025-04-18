@@ -1,1 +1,69 @@
-<p>testimonials works!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<h2>Testimonials:</h2>
+
+<div class="container">
+  <div class="slider-window">
+    <div class="bikini-bottom" id="slider">
+      
+      <!-- Testimonial for Patrik-->
+      <div class="testimonial-slide">
+        <div class="testi">
+          <img src="imgs/patrik.png" alt="Patrik" class="images">
+        </div>
+        <div class="text">
+          <p class="description">
+            "I don’t remember much, but I remember the photos looked amazing! The photographer told me to smile, and suddenly I looked smarter than usual! Totally recommend — even SpongeBob said I looked classy."
+          </p>
+          <i class="fa-solid fa-quote-right quote-icon"></i>
+          <section class="details">
+            <p class="name">Mr. Patrik Star</p>
+            <p class="job">Waiter, Krusty Krab</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Testimonial for Mr. Crab-->
+      <div class="testimonial-slide">
+        <div class="testi">
+          <img src="imgs/crab.png" alt="Mr. Krabs" class="images">
+        </div>
+        <div class="text">
+          <p class="description">
+            "Best investment I made — and that’s sayin' something! The photographer captured me and me first dollar in the perfect lighting. Arrr, worth every penny (but don’t tell anyone I said that)."
+          </p>
+          <i class="fa-solid fa-quote-right quote-icon"></i>
+          <section class="details">
+            <p class="name">Mr.Eugene Krabs</p>
+            <p class="job">Owner, Krusty Krab</p>
+          </section>
+        </div>
+      </div>
+
+     <!-- Testimonial for Mr. Plankton-->
+      <div class="testimonial-slide">
+        <div class="testi">
+          <img src="imgs/Plankton.jpg" alt="Plankton" class="images">
+        </div>
+        <div class="text">
+          <p class="description">
+            "At last! A photo where I look tall, intimidating, and charismatic. Karen says it’s my best look yet. This photography service is almost good enough to help me steal the Krabby Patty secret formula!"
+          </p>
+          <i class="fa-solid fa-quote-right quote-icon"></i>
+          <section class="details">
+            <p class="name">Plankton</p>
+            <p class="job">Evil Genius</p>
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- handle button for sliding -->
+  <div class="controls">
+    <button (click)="slideTo(0)"></button>
+    <button (click)="slideTo(1)"></button>
+    <button (click)="slideTo(2)"></button>
+  </div>
+</div>
