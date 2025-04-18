@@ -1,6 +1,8 @@
 .lead-image{
-  height: 500px;
   overflow: hidden;
+}
+.lead-image img{
+  min-width: 500px;
 }
 .lead-text-effect {
   transition: all 0.3s ease;
@@ -11,3 +13,9 @@
   color: #f3d9a4;
   transform: scale(1.05);
 }
+@media screen and (min-width: 768px) {
+  .lead-image{
+    height: 500px;
+  }
+}
+
