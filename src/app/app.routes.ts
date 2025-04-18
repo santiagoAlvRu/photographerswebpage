@@ -4,13 +4,11 @@ import { AboutComponent } from './components/about/about.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { DetailsComponent } from './components/home/details/details.component';
-import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'details/:photoId', component: DetailsComponent},
     {path: 'about', component: AboutComponent},
     {path: 'testimonials', component: TestimonialsComponent},
-    {path: 'customers', component: CustomersComponent},
-    {path: 'contact', component: ContactComponent}
+    {path: 'customers', component: CustomersComponent}
 ];
