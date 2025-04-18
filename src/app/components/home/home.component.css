@@ -1,43 +1,10 @@
-/* HERO STYLING */
-
-.hero-section {
-  position: relative;
-  height: 100vh;
-  background: url('/imgs/hero-image.png') center center/cover no-repeat;
-}
-
-.hero-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.hero-section .content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-section h1 {
-  transition: all 0.3s ease;
-  color: #fff;
-}
-
-.hero-section h1:hover {
-  color: #f3d9a4;
-  transform: scale(1.05);
-}
-
 /* PORTFOLIO STYLING */
 
 .image-overlay-container {
     position: relative;
     overflow: hidden;
   }
-  
+
   .image-overlay-container img {
     transition: transform 0.4s ease;
   }
@@ -70,7 +37,7 @@
     background-image: url('/imgs/space-background.jpeg');
     background-color: #0b1e3f;
     background-blend-mode: overlay;
-  
+
     img {
         width: 200px;
         height: 200px;
@@ -89,7 +56,7 @@
     color: #2d2d2d;
     font-family: 'Segoe UI';
   }
-  
+
   .latest-blog h2 {
     text-align: center;
     font-size: 2rem;
@@ -97,7 +64,7 @@
     color: #1e3a5f;
 
   }
-  
+
   .content-container {
     display: flex;
     flex-wrap: wrap;
@@ -105,37 +72,37 @@
     gap: 2.5rem;
     margin: 0 auto;
   }
-  
+
   .video-container iframe {
     height: 500px;
     border-radius: 12px;
   }
-  
+
   .blog-info {
     max-width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .blog-info h3 {
     font-size: 1.6rem;
     color: #1e3a5f;
     margin-bottom: 1rem;
   }
-  
+
   .meta {
     font-size: 0.95rem;
     color: #777;
     margin-bottom: 1.5rem;
   }
-  
+
   .summary {
     font-size: 1rem;
     color: #444;
     line-height: 1.6;
   }
-  
+
   .read-more {
     color: #1e3a5f;
     font-weight: bold;
@@ -143,16 +110,16 @@
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
   }
-  
+
   .read-more:hover {
     border-color: #1e3a5f;
   }
-  
+
   .powered-by span {
     font-size: 0.9rem;
     color: #888;
   }
-  
+
   .powered-by img {
     height: 75px;
     object-fit: contain;
