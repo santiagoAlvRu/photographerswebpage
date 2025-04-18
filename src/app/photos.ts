@@ -28,9 +28,9 @@ export let photos: Iphotos[] = [
     },
     {
         id: 5,
-        name: 'Poledance Photoshoot',
-        description: 'Strength, grace, and fierce expression—captured in motion. This shoot is all about power, artistry, and owning your space.',
-        image: 'poledance.jpeg'
+        name: 'Nature',
+        description: 'Where light dances and life unfolds discover moments of pure wonder captured in the wild.',
+        image: 'nature.jpeg'
     },
     {
         id: 6,
