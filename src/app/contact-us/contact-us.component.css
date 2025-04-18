@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: rgba(128, 255, 212, 0.2);
+    border-radius: 40px;
+    align-items: center;
+}
+
+.paragraph p{
+    max-width:800px;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+.form{
+    max-width:800px;
+    padding-left: 25px;
+}
+.physical p{
+    text-align: center;
+}
+.black{
+    font-weight: bold;
+    font-size: medium;
+    text-decoration:underline ;
+}
+.black1{
+    font-weight: bold;
+    font-size: medium;
+    text-decoration:underline ;
+}
+.header h2{
+    text-align: center;
+    padding:5px;
+}
+.text-center{
+    margin: 50px;
+    font-size: 50px;
+}
+.physical{
+    display:flex;
+    position: relative;
+}
+.address p{
+    width:200px;
+    margin:0;
+}
+.phone{
+    width:200px;
+}
+
+.images {
+    background-size: cover;
+    position: absolute;
+    margin-top: -300px; 
+    transform: rotate(-5deg);
+    padding-left: 8rem;
+    padding-top: 3rem;
+    max-width:800px ;
+  }
+  
+  .spongebob {
+    max-width: 250px;
+    max-height: 400px;
+    background-size: cover;
+    position: absolute;
+    margin-top: 100px;
+    transform: rotate(-5deg);
+    padding-left: 5rem;
+    padding-top: 3rem;
+  }
+
+  .general {
+    font-size: 18px;
+    color: rgb(0, 128, 0, 0.8);
+  }
+  
+
