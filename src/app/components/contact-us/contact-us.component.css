@@ -64,21 +64,11 @@
     padding-top: 3rem;
     max-width:800px ;
   }
-  
-  .spongebob {
-    max-width: 250px;
-    max-height: 400px;
-    background-size: cover;
-    position: absolute;
-    margin-top: 100px;
-    transform: rotate(-5deg);
-    padding-left: 5rem;
-    padding-top: 3rem;
-  }
+ 
 
   .general {
     font-size: 18px;
-    color: rgb(0, 128, 0, 0.8);
+    color: black;
   }
   
   @media (max-width: 600px) {
