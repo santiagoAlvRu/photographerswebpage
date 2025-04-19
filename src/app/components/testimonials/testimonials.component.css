@@ -5,9 +5,10 @@ h2 {
   .container {
     width: 100%;
     max-width: 1600px; 
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 16px;
-    background-color:rgba(128, 255, 212, 0.2);
+    background-color: whitesmoke;
+    border: 2px solid lightgray;
     border-radius: 40px;
   }
   
@@ -87,4 +88,59 @@ h2 {
     cursor: pointer;
   }
   
+  @media (max-width: 1000px) {
+    .testimonial-slide {
+      padding: 16px;
+    }
+  
+    .description, .name, .job {
+      font-size: 16px;
+    }
+  
+    .images {
+      max-width: 150px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .bikini-bottom {
+      flex-direction: column;
+      transition: none;
+    }
+  
+    .slider-window {
+      max-width: 100%;
+    }
+  
+    .testimonial-slide {
+      max-width: 100%;
+      padding: 16px;
+    }
+  
+    .images {
+      max-width: 120px;
+    }
+  
+    .description, .name, .job {
+      font-size: 14px;
+    }
+  
+    .controls {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    .description, .name, .job {
+      font-size: 13px;
+    }
+  
+    .images {
+      max-width: 100px;
+    }
+  }
  

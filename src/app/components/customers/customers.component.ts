@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { CUSTOMERS } from '../customers';
-import { Customer } from '../customers.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Customer } from '../../customers.model';
+import { CUSTOMERS } from '../../customers';
 
 @Component({
   selector: 'app-customers',
@@ -10,7 +10,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css'
 })
-
 
 export class CustomersComponent {
   customers: Customer[] = CUSTOMERS;
