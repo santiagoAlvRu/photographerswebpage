@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {LayoutComponent} from './components/layout/layout.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormBuilder, NgModel, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'photographerswebpage';
-}
+ 
+  }
+

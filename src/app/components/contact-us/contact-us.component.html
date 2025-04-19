@@ -25,42 +25,87 @@
         </div>
     </div>
     <!--form start here-->
-    <div class="form">
+    <div class="form" (ngSubmit)="onUserSave()" [formGroup]="contactUs">
         <form>
             <div class="mb-3">
               <label for="Name" class="form-label">First-Name</label>
-              <input type="text" required class="form-control" id="Name" aria-describedby="Name">
+              <input type="text" formControlName="fname" class="form-control" id="Name" aria-describedby="Name">
+              <div>
+                @if (contactUs.controls["fname"].errors?.["required"] && contactUs.controls["fname"].touched ) {
+                    <span class="text-danger">This is required</span>
+                }
+              </div>
+              
             </div>
 
             <div class="mb-3">
                 <label for="Last-Name" class="form-label">Last-Name</label>
-                <input type="text" required class="form-control" id="Last-name" aria-describedby="Last-name">
+                <input type="text" formControlName="lname" class="form-control" id="Last-name" aria-describedby="Last-name">
+                <div>
+                    @if (contactUs.controls["lname"].errors?.["required"] && contactUs.controls["lname"].touched) {
+                        <span class="text-danger">This is required</span>
+                    }
+                </div>
+                
             </div>
 
             <div class="mb-3">
                 <label for="Country" class="form-label">Country</label>
-                <input type="Name" required class="form-control" id="Country" aria-describedby="Country">
+                <input type="Name" formControlName="country"  class="form-control" id="Country" aria-describedby="Country">
+                <div>
+                    @if (contactUs.controls["country"].errors?.["required"] && contactUs.controls["country"].touched) {
+                        <span class="text-danger">This is required</span>
+                    }
+                </div>
             </div>
 
             <div class="mb-3">
                 <label for="Province" class="form-label">Province</label>
-                <input type="Name" required class="form-control" id="Province" aria-describedby="Province">
+                <input type="Name" formControlName="province"  class="form-control" id="Province" aria-describedby="Province">
+                <div>
+                    @if (contactUs.controls["province"].errors?.["required"] && contactUs.controls["province"].touched) {
+                        <span class="text-danger">This is required</span>
+                    }
+                </div>
+                
             </div>
 
             <div class="mb-3">
                 <label for="Street" class="form-label">Street/House-Number </label>
-                <input type="Name" required class="form-control" id="Street" aria-describedby="Street">
+                <input type="Name" formControlName="street"  class="form-control" id="Street" aria-describedby="Street">
+                <div>
+                    @if (contactUs.controls["street"].errors?.["required"] && contactUs.controls["street"].touched) {
+                        <span class="text-danger">This is required</span>
+                    }
+                </div>
+                
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="Emailhelp">
-                <div id="emailHelp" required class="form-text">We'll never share your email with anyone else.</div>
+                <input type="email" formControlName="email" class="form-control" id="email" aria-describedby="Emailhelp">
+                <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
+                <div>
+                    @if (contactUs.controls["email"].errors?.["required"] && contactUs.controls["email"].touched){
+                        <span class="text-danger">This is required</span>
+                    }
+                    @if (contactUs.controls["email"].errors?.["email"] && contactUs.controls["email"].touched ){
+                        <span class="text-warning">Please Enter Proper Email Format</span>
+                    }
+                    
+                </div>
+                
             </div>
 
             <div class="mb-3 form-check">
-              <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Agree to our term and condition!</label>
+                <input type="checkbox" formControlName="isagree" required class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Agree to our terms and conditions!</label>
+                <div>
+                    @if (contactUs.controls["isagree"].errors?.["required"] && contactUs.controls["isagree"].untouched) {
+                        <span class="text-danger">Please click on Terms and Condition</span>
+                    }
+                </div>
+                
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
