@@ -17,8 +17,6 @@
   @for (course of courses; track course.id) {
   <h2>{{ course.name }}</h2>
   <p>{{ course.description }}</p>
-  <p>Start Date: {{ course.start }}</p>
-  <p>Cost: {{ course.cost }}</p>
-  <button>{{ course.button }}</button>
+  <button [routerLink]="['/courses', course.id]">View Details</button>
   }
 </div>

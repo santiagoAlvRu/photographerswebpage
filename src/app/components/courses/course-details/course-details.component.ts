@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { courses } from '../../../courses';
 import { Course } from '../../../courses.model';
@@ -8,15 +8,18 @@ import { Course } from '../../../courses.model';
   templateUrl: './course-details.component.html',
   styleUrls: ['./course-details.component.css']
 })
-export class CourseDetailsComponent implements OnInit {
+export class CourseDetailsComponent {
   course: Course | undefined;
   courses: Course[] = courses;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) {
+    this.initializeCourse();
+  }
 
-  ngOnInit(): void {
+  private initializeCourse(): void { //private method to initialize course meaning it can only be accessed within this class
     const courseId = +this.route.snapshot.paramMap.get('id')!;
-    this.course = courses.find(c => c.id === courseId);
+    this.course = this.courses.find(c => c.id === courseId);
   }
 }
-// This component is responsible for displaying the details of a specific course.
+
+// This code defines a CourseDetailsComponent in Angular that retrieves and displays details of a specific course based on the ID passed in the route parameters. The component uses the ActivatedRoute service to access the route parameters and find the corresponding course from a predefined list of courses. The course details are then displayed in the template.
