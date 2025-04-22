@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <h1 class="display-4">About Me</h1>
+  <h1 class="display-3">About Me</h1>
 
   <img
     class="rounded-circle border border-dark-2 mb-4"
@@ -9,21 +9,32 @@
     height="350"
   />
 
+  <!-- Adding blockquote -->
+  <blockquote class="blockquote text-center">
+    <p class="mb-3">
+      "Photography is a way of feeling, of touching, of loving. What you have
+      caught on film is captured forever… <br />
+      It remembers little things, long after you have forgotten everything."
+    </p>
+    <footer class="blockquote-footer">
+      <cite title="Source Title">Aaron Siskind</cite>
+    </footer>
+  </blockquote>
+
+  <!-- About section -->
   <div class="about-section">
-    <p class="lead">
+    <p class="h4">
       Hello! I'm <strong>John Doe</strong>, a passionate and dedicated
-      photographer based in <strong>Vienna</strong>. With over
-      <strong>20</strong> years of experience in the field, I specialize in
-      capturing the essence of moments through my lens.
-    </p>
-    <p>
-      My journey in photography began when I was <strong>20</strong>, and since
-      then, I've been driven by the desire to tell stories through compelling
-      visuals. Whether it's a wedding, a portrait session, or a commercial
-      project, I strive to create images that are not only aesthetically
-      pleasing but also emotionally resonant.
-    </p>
-    <p>
+      photographer based in <strong>Vienna</strong>. <br />
+      With over <strong>20</strong> years of experience in the field, I
+      specialize in capturing the essence of moments through my lens.
+      <br />
+      <br />
+      My journey in photography began when I was 20, and since then, I've been
+      driven by the desire to tell stories through compelling visuals. Whether
+      it's a wedding, a portrait session, or a commercial project, I strive to
+      create images that are not only aesthetically pleasing but also
+      emotionally resonant. <br />
       I believe that every photograph is a unique piece of art, and I take pride
       in delivering high-quality work that exceeds my clients' expectations. My
       style is a blend of classic and contemporary, with a focus on natural
@@ -34,8 +45,13 @@
   <!-- Collaborators Section -->
   <div class="collaborators-section mt-5">
     <h2 class="display-5">Collaborators</h2>
-    <img class="img-fluid mb-3" src="imgs/team.jpg" alt="Team" />
-    <p class="lead">
+    <img
+      class="img-fluid mb-3"
+      src="imgs/team.jpg"
+      alt="Team"
+      style="border-radius: 5%"
+    />
+    <p class="h4">
       I work with a team of highly qualified professionals who share my passion
       for photography. Each team member brings unique experience and contributes
       to creating exceptional results.
@@ -92,13 +108,23 @@
     <h2 class="display-5">Tools Used</h2>
     <div class="row">
       <div class="col-md-6">
-        <img class="img-fluid mb-3" src="imgs/cameras.jpg" alt="Cameras" />
+        <img
+          class="img-fluid mb-3"
+          src="imgs/cameras.jpg"
+          alt="Cameras"
+          style="border-radius: 5%"
+        />
       </div>
       <div class="col-md-6">
-        <img class="img-fluid mb-3" src="imgs/camera2.0.jpg" alt="Cameras" />
+        <img
+          class="img-fluid mb-3"
+          src="imgs/camera2.0.jpg"
+          alt="Cameras"
+          style="border-radius: 5%"
+        />
       </div>
     </div>
-    <p class="lead">
+    <p class="h4">
       We use state-of-the-art equipment to ensure the highest quality images.
       Our main tools include professional cameras, high-quality lenses, studio
       lights, and advanced editing software.
@@ -107,11 +133,15 @@
 
   <!-- Contact Section -->
   <div class="contact-section mt-5">
-    <p class="lead">
+    <p class="h4">
       If you're interested in working with me or have any questions, feel free
       to reach out through the contact form. I look forward to capturing your
       special moments!
     </p>
-    <button class="btn btn-dark mt-4" routerLink="/contact">Contact Me</button>
+    <a
+      routerLink="/contact-us"
+      class="btn btn-outline-dark btn-lg mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-black font-semibold py-3 px-6 rounded-xl shadow-md transition duration-300 mt-6"
+      >Contact Us</a
+    >
   </div>
 </div>
