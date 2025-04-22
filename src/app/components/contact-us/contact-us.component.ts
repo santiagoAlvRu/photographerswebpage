@@ -22,4 +22,8 @@ onUserSave() {
   console.log(formValue);
 }
 
+resetForm() {
+this.contactUs.reset();
+}
+
 }
