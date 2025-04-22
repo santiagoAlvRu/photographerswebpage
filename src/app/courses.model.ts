@@ -3,7 +3,7 @@ export interface Course {
     id: number;
     name: string;
     description: string;
-    start: number;
+    start: string;
     cost: string;
     button: string;
 
