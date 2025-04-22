@@ -39,13 +39,13 @@
             Courses
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" routerLink="/beginner"
+            <a class="dropdown-item" [routerLink]="['/courses', 1]"
               >Beginner Photography</a
             >
-            <a class="dropdown-item" routerLink="/portrait"
+            <a class="dropdown-item" [routerLink]="['/courses', 2]"
               >Portrait Photography</a
             >
-            <a class="dropdown-item" routerLink="/landscape"
+            <a class="dropdown-item" [routerLink]="['/courses', 3]"
               >Landscape Photography</a
             >
           </div>

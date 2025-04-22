@@ -1,1 +1,24 @@
-<p>courses works!</p>
+<div class="course-intro">
+  <h1>Welcome to Our Photography Courses</h1>
+  <h2>
+    Whether you're a beginner looking to learn the basics or an exh3erienced
+    photographer aiming to master advanced techniques, we have the perfect
+    course for you. Our expert instructors will guide you through every step,
+    ensuring you gain the skills and confidence to capture stunning photographs.
+  </h2>
+  <h3>
+    Explore our range of courses below and start your journey to becoming a
+    better photographer today!
+  </h3>
+</div>
+
+<div class="courses-list">
+  <h1>Our Courses</h1>
+  @for (course of courses; track course.id) {
+  <h2>{{ course.name }}</h2>
+  <p>{{ course.description }}</p>
+  <p>Start Date: {{ course.start }}</p>
+  <p>Cost: {{ course.cost }}</p>
+  <button>{{ course.button }}</button>
+  }
+</div>

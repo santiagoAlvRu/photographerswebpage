@@ -5,9 +5,8 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { CustomersComponent } from './components/customers/customers.component';
 import { DetailsComponent } from './components/home/details/details.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { BeginnerComponent } from './components/courses/beginner/beginner.component';
-import { PortraitComponent } from './components/courses/portrait/portrait.component';
-import { LandscapeComponent } from './components/courses/landscape/landscape.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { CourseDetailsComponent } from './components/courses/course-details/course-details.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -16,8 +15,7 @@ export const routes: Routes = [
     {path: 'testimonials', component: TestimonialsComponent},
     {path: 'customers', component: CustomersComponent},
     {path:'contact-us', component:ContactUsComponent},
-    {path: 'beginner', component: BeginnerComponent},
-    {path: 'portrait', component: PortraitComponent},
-    {path: 'landscape', component: LandscapeComponent}
+    {path: 'courses', component: CoursesComponent},
+    {path: 'courses/:id', component: CourseDetailsComponent},
 
 ];
