@@ -4,5 +4,6 @@ export interface Customer {
     name: string;
     description: string;
     logo: string;
+    link: string;
 
     }
