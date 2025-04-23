@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
 contactUs:FormGroup=new FormGroup ({
   fname:new FormControl("",[Validators.required]),
   lname:new FormControl("", [Validators.required]),
@@ -26,4 +26,7 @@ resetForm() {
 this.contactUs.reset();
 }
 
+ngOnInit(): void {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 }
