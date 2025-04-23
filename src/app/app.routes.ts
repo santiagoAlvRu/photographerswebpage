@@ -15,6 +15,6 @@ export const routes: Routes = [
     {path: 'testimonials', component: TestimonialsComponent},
     {path: 'customers', component: CustomersComponent},
     {path: 'contact-us', component:ContactUsComponent},
-    {path: 'course-detail/:courseId', component: CourseDetailComponent},
+    {path: 'course-detail/:courseId', component: CourseDetailComponent}, //Here's the culprit. The route is defined with a parameter courseId, which is used to load the course details based on the courseId.
 
 ];
