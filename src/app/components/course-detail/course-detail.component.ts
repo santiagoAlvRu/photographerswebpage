@@ -49,16 +49,17 @@ export class CourseDetailComponent implements OnInit{ //OnInit is an interface t
   constructor(private route: ActivatedRoute) { } //The constructor is a special method that is called when an instance of the class is created. It is used to initialize the properties of the class and to inject dependencies. The constructor takes a parameter of type ActivatedRoute, which is used to access the route parameters.
   
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const courseId = params['courseId'];
-      this.loadCourse(courseId);
+    this.route.params.subscribe(params => { //Here, we subscribe to the params observable of the ActivatedRoute service. This allows us to react to changes in the route parameters.
+      const courseId = params['courseId']; 
+      this.loadCourse(courseId); //The loadCourse method is called with the courseId parameter. This method is responsible for loading the course details based on the courseId.
     });
   }
-  private loadCourse(courseId: string): void {
+  private loadCourse(courseId: string): void { //The loadCourse method takes a courseId parameter of type string and is responsible for loading the course details based on the courseId.
     this.course = this.courses.find(course => course.id === Number(courseId)) as Course;
-    console.log('Course:', this.course);
+    // console.log('Course:', this.course);
   }
 
+  // Calling the enroll method when the button is clicked
   enroll(course: Course): void {
     alert(`You have enrolled in ${course.name} course!`);
   }
