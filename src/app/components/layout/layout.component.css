@@ -1,6 +1,50 @@
 .bg-layout{
   background-color: #d3d3d3;
+  font-family: 'Poetsen One';
 }
-.layout {
-  font-family: 'Fraunces', serif;
+
+.navbar-brand {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: darkred;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: darkred;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}
+
+/* Add transition to dropdown */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown:hover .dropdown-menu,
+.nav-item.dropdown.show .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
 }

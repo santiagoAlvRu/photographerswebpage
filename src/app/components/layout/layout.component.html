@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-layout">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">Home</a>
+    <a class="navbar-brand">John Doe Photography</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,43 +13,46 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
+        
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/about"
-            >About</a
-          >
+          <a class="nav-link" aria-current="page" routerLink="/">Home</a>
         </li>
+                <!-- Dropdown for courses -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Courses
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['/courses', 1]"
+                      >Beginner Photography</a
+                    >
+                    <a class="dropdown-item" [routerLink]="['/courses', 2]"
+                      >Portrait Photography</a
+                    >
+                    <a class="dropdown-item" [routerLink]="['/courses', 3]"
+                      >Landscape Photography</a
+                    >
+                  </div>
+                </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/testimonials">Testimonials</a>
+          <a class="nav-link" aria-current="page" routerLink="/testimonials">Testimonials</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/customers">Customers</a>
         </li>
-        <!-- Dropdown for courses -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Courses
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" [routerLink]="['/courses', 1]"
-              >Beginner Photography</a
-            >
-            <a class="dropdown-item" [routerLink]="['/courses', 2]"
-              >Portrait Photography</a
-            >
-            <a class="dropdown-item" [routerLink]="['/courses', 3]"
-              >Landscape Photography</a
-            >
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
         </li>
+
       </ul>
     </div>
   </div>
