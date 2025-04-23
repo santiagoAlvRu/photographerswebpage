@@ -1,0 +1,22 @@
+<div class="courses-detail">
+  <h1>Our Courses</h1>
+  <p>Explore our range of courses designed to enhance your skills.</p>
+  <p>
+    Whether you're a beginner or looking to refine your skills, we have
+    something for everyone.
+  </p>
+  <p>Click on a course to learn more and enroll.</p>
+  <p>We look forward to seeing you in class!</p>
+</div>
+<div class="course-list">
+  <div class="course-item">
+    <h2>
+      <strong>{{ course.name }}</strong>
+    </h2>
+    <p><strong>Start Date:</strong> {{ course.start }}</p>
+    <p><strong>Duration:</strong> {{ course.duration }}</p>
+    <p>{{ course.description }}</p>
+    <p><strong>Costs:</strong> {{ course.cost }}</p>
+    <button (click)="enroll(course)">{{ course.button }}</button>
+  </div>
+</div>

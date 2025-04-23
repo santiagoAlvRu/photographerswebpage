@@ -14,37 +14,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        
         <li class="nav-item">
           <a class="nav-link" aria-current="page" routerLink="/">Home</a>
         </li>
-                <!-- Dropdown for courses -->
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Courses
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" [routerLink]="['/courses', 1]"
-                      >Beginner Photography</a
-                    >
-                    <a class="dropdown-item" [routerLink]="['/courses', 2]"
-                      >Portrait Photography</a
-                    >
-                    <a class="dropdown-item" [routerLink]="['/courses', 3]"
-                      >Landscape Photography</a
-                    >
-                  </div>
-                </li>
+
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/testimonials">Testimonials</a>
+          <a class="nav-link" aria-current="page" routerLink="/testimonials"
+            >Testimonials</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/customers">Customers</a>
@@ -52,7 +29,32 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/about">About</a>
         </li>
+        <!-- Dropdown for courses -->
 
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/course-detail/1"
+              >Beginner Photography</a
+            >
+            <a class="dropdown-item" routerLink="/course-detail/2"
+              >Portrait Photography</a
+            >
+            <a class="dropdown-item" routerLink="/course-detail/3"
+              >Landscape Photography</a
+            >
+          </div>
+        </li>
       </ul>
     </div>
   </div>

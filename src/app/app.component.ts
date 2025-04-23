@@ -3,8 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import {LayoutComponent} from './components/layout/layout.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder, NgModel, ReactiveFormsModule } from '@angular/forms';
-import { CoursesComponent } from './components/courses/courses.component';
-import { CourseDetailsComponent } from './components/courses/course-details/course-details.component';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
