@@ -99,10 +99,10 @@
 
             <div class="mb-3 form-check">
                 <input type="checkbox" formControlName="isagree" required class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Agree to our terms and conditions!</label>
+                <label class="form-check-label" for="exampleCheck1">Agree our Terms and Conditions</label>
                 <div>
                     @if (contactUs.controls["isagree"].errors?.["required"] && contactUs.controls["isagree"].untouched) {
-                        <span class="text-danger">Please click on Terms and Condition</span>
+                        <span class="text-danger">Please click on Terms and Conditions</span>
                     }
                 </div>
                 
