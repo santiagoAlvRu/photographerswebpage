@@ -1,72 +1,81 @@
-/* General Styles for Course Detail and Course List  */
+/* General Styles for Course Detail */
 .courses-detail {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .courses-detail h1 {
-    font-size: 3em;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .courses-detail p {
-    font-size: 1.5rem;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  /* Courses list Styles */
-  .course-list {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .course-item {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .course-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .course-item h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 0;
-  }
-  
-  .course-item p {
-    font-size: 1.5em;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .course-item strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .course-item button {
-    background-color: rgba(128, 128, 128, 0.39);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .course-item button:hover {
-    background-color: rgb(93, 93, 93);
-  }
+  padding: 40px 20px;
+  background: linear-gradient(to right, #eef2f3, #f9f9f9);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.courses-detail h1 {
+  font-size: 3.5em;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.courses-detail p {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* Courses List Styles */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.course-item {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.course-item h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.course-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.course-item strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.course-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.course-item button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
