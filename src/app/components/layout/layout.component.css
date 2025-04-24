@@ -1,11 +1,11 @@
 .bg-layout{
   background-color: #ece2ce;
-  font-family: 'Poetsen One';
+  font-family: 'Merriweather';
 }
 
 .navbar {
   background-color: #ece2ce;
-  font-family: 'Poetsen One';
+  font-family: 'Merriweather';
 }
 
 .custom-navbar {
@@ -54,6 +54,7 @@
   display: block;
   visibility: hidden;
   pointer-events: none;
+  background-color: #ece2ce;
 }
 
 .dropdown:hover .dropdown-menu,
