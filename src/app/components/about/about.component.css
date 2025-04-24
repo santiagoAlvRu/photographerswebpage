@@ -16,3 +16,56 @@
     background-color: #23272b;
     border-color: #23272b;
   }
+
+.about-section,
+.collaborators-section,
+.tools-section,
+.contact-section {
+  padding: 3rem 1rem;
+}
+
+.about-section p,
+.collaborators-section p,
+.tools-section p,
+.contact-section p {
+  line-height: 1.8;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+  border: 4px solid #d3c6a5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+.blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.blockquote-footer {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.contact-section .btn {
+  background-color: #ece2ce;
+  border: none;
+  color: #222;
+}
+
+.contact-section .btn:hover {
+  background-color: #e0d3b7;
+  color: #000;
+}

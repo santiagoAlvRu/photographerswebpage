@@ -1,5 +1,5 @@
 <div class="container text-center">
-  <h1 class="display-4 m-5">Customers</h1>
+  <h1 class="display-4 my-5 fw-bold">Our Customers</h1>
   <div class="lead">
     <p>
       From weddings to corporate events, we are honored to have captured the
@@ -16,7 +16,7 @@
   <div class="containerLogos my-4">
     <div class="row">
       @for (customer of customers; track customer.id) {
-      <div class="col-md-6 mb-4">
+        <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
         <img
           src="{{ customer.logo }}"
           class="img-fluid clickable-logo"
@@ -36,12 +36,17 @@
         <div class="modal-footer">
           <button
             type="button"
-            class="btn btn-outline-dark"
+            class="btn btn-outline-secondary"
             (click)="modal.close('Close click')"
           >
             Close
           </button>
-          <a href="{{ customer.link }}" class="btn btn-outline-dark">
+          <a 
+          href="{{ customer.link }}"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-dark"
+          >
             Go to the Website</a
           >
         </div>

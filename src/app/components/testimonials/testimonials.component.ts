@@ -8,8 +8,16 @@ import { Component } from '@angular/core';
   standalone:true,
 })
 export class TestimonialsComponent {
-  slideTo(index: number): void {   //no return funtion slideto with index---created
-    const transform = `translateX(${index * -800}px)`; //a constant trasnform which translate each slide to -800px as i created each slide of 800px
-    document.querySelector('#slider')!.setAttribute('style', `transform: ${transform}`); //fetch the id slider and setattribute to to transform
+  slideTo(index: number) {
+    const slider = document.getElementById('slider');
+    if (slider) {
+      const offset = index * -100;
+      slider.style.transform = `translateX(${offset}%)`;
+  
+      // Optionally toggle active class on buttons
+      document.querySelectorAll('.controls button').forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+    }
   }
 }

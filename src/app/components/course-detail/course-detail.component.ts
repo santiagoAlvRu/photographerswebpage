@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { Course } from '../course.model';
-import { LayoutComponent } from '../layout/layout.component';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -61,6 +61,16 @@ export class CourseDetailComponent implements OnInit{ //OnInit is an interface t
 
   // Calling the enroll method when the button is clicked
   enroll(course: Course): void {
-    alert(`You have enrolled in ${course.name} course!`);
+    Swal.fire({
+      title: 'Good job!',
+      text: `You have enrolled in ${course.name} course!`,
+      icon: 'success',
+      confirmButtonText: 'OK',
+      buttonsStyling: false,
+      
+      customClass: {
+          confirmButton: 'btn btn-primary px-4',
+      },
+      });
   }
 }

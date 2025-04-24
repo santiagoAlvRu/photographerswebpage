@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact-us',
@@ -23,7 +24,18 @@ onUserSave() {
 }
 
 resetForm() {
+if(this.contactUs.valid) {
 this.contactUs.reset();
+Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your form has been submitted!",
+  showConfirmButton: false,
+  timer: 1500
+});
+} else {
+  this.contactUs.markAllAsTouched();
+}
 }
 
 ngOnInit(): void {
