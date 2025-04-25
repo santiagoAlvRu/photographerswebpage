@@ -8,6 +8,9 @@ import {RouterLink} from '@angular/router';
   styleUrl: './layout.component.css'
 })
 export class LayoutComponent {
+
+
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const navbar = document.getElementById('mainNavbar');
@@ -17,4 +20,12 @@ export class LayoutComponent {
       navbar?.classList.remove('navbar-transparent');
     }
   }
+
+  closeNavbar() {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse?.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+    }
+  }
+
 }

@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+          <a class="nav-link" aria-current="page" routerLink="/" (click)="closeNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
+          <a class="nav-link" routerLink="/about" (click)="closeNavbar()">About</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -35,27 +35,27 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <!-- Dropdown items for courses where each item is a link to a course detail page and the numbers stand for the ids -->
 
-            <a class="dropdown-item" routerLink="/course-detail/1"
+            <a class="dropdown-item" routerLink="/course-detail/1" (click)="closeNavbar()"
               >Beginner Photography</a
             >
-            <a class="dropdown-item" routerLink="/course-detail/2"
+            <a class="dropdown-item" routerLink="/course-detail/2" (click)="closeNavbar()"
               >Portrait Photography</a
             >
-            <a class="dropdown-item" routerLink="/course-detail/3"
+            <a class="dropdown-item" routerLink="/course-detail/3" (click)="closeNavbar()"
               >Landscape Photography</a
             >
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="/testimonials"
+          <a class="nav-link" aria-current="page" routerLink="/testimonials" (click)="closeNavbar()"
             >Testimonials</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/customers">Customers</a>
+          <a class="nav-link" routerLink="/customers" (click)="closeNavbar()">Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us">Contact</a>
+          <a class="nav-link" routerLink="/contact-us" (click)="closeNavbar()">Contact</a>
         </li>
       </ul>
     </div>
